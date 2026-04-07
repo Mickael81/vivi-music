@@ -811,12 +811,12 @@ est irréversible.
     <string name="perm_notif_title">Notifications</string>
     <string name="perm_notif_desc">Sachez immédiatement quand votre musique est en cours de lecture et contrôlez-la depuis la barre de notification.</string>
 
-    <string name="perm_install_title">App Installation</string>
-    <string name="perm_install_desc">Required to download and install app updates seamlessly.</string>
+    <string name="perm_install_title">Installation de l\'application</string>
+    <string name="perm_install_desc">Nécessaire pour télécharger et installer les mises à jour de l\'application sans problème.</string>
 
-    <string name="feat_discover">Discover</string>
-    <string name="feat_features">Features</string>
-    <string name="feat_intro">Explore everything ViviMusic has to offer for your music journey.</string>
+    <string name="feat_discover">Découvrir</string>
+    <string name="feat_features">Caractéristiques</string>
+    <string name="feat_intro">Découvrez tout ce que Vivi Music a à vous offrir pour votre parcours musical.</string>
 
     <string name="feat_lyrics_title">Smart Lyrics</string>
     <string name="feat_lyrics_desc">Enjoy synchronized, word-by-word lyrics for millions of songs.</string>
