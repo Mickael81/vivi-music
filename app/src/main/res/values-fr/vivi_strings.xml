@@ -800,16 +800,16 @@ est irréversible.
     <string name="telegram_channel">Telegram</string>
 
 	<!-- Onboarding -->
-    <string name="welcome_to">Welcome to</string>
-    <string name="welcome_preparing_subtitle">Let\'s get everything ready for you.</string>
-    <string name="get_started">Get Started</string>
+    <string name="welcome_to">Bienvenue sur</string>
+    <string name="welcome_preparing_subtitle">Nous allons tout préparer pour vous.</string>
+    <string name="get_started">Commencer</string>
 
-    <string name="perm_required">Required</string>
-    <string name="perm_permissions">Permissions</string>
-    <string name="perm_intro_text">These permissions are required for ViviMusic to function correctly. Please grant them to proceed.</string>
+    <string name="perm_required">Obligatoire</string>
+    <string name="perm_permissions">Autorisations</string>
+    <string name="perm_intro_text">Ces autorisations sont nécessaires au bon fonctionnement de Vivi Music. Veuillez les accorder pour continuer.</string>
 
     <string name="perm_notif_title">Notifications</string>
-    <string name="perm_notif_desc">Know immediately when your music is playing and control it from the notification bar.</string>
+    <string name="perm_notif_desc">Sachez immédiatement quand votre musique est en cours de lecture et contrôlez-la depuis la barre de notification.</string>
 
     <string name="perm_install_title">App Installation</string>
     <string name="perm_install_desc">Required to download and install app updates seamlessly.</string>
