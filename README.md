@@ -136,6 +136,17 @@
 
 <hr>
 
+<h2 align="center">💖 Support the Project</h2>
+
+<div align="center">
+  <p>If you enjoy VIVI Music and want to support its maintenance and development, you can buy me a coffee!</p>
+  <a href="https://ko-fi.com/vividhpashokan">
+    <img src="https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi">
+  </a>
+</div>
+
+<hr>
+
 <h2>🔄 Setting Up OTA Updates</h2>
 
 <p>To receive automatic updates within VIVI Music, you need to grant the app permission to install updates:</p>

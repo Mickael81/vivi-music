@@ -206,7 +206,7 @@ fun AboutScreen(
 
             // Coffee Badge
             Surface(
-                onClick = { uriHandler.safeOpenUri(context, "") },
+                onClick = { uriHandler.safeOpenUri(context, "https://ko-fi.com/vividhpashokan") },
                 shape = CircleShape,
                 color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.7f),
                 modifier = Modifier.height(36.dp)
@@ -239,7 +239,7 @@ fun AboutScreen(
                 Material3SettingsItem(
                     icon = painterResource(R.drawable.dev),
                     title = { Text(stringResource(R.string.developer_name)) },
-                    description = { Text(stringResource(R.string.app_developer)) },
+                    description = { Text(stringResource(R.string.app_developer), color = MaterialTheme.colorScheme.primary) },
                     tintIcon = false,
                     iconShape = cookieShape,
                     onClick = { uriHandler.safeOpenUri(context, "https://github.com/vivizzz007") }

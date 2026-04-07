@@ -16,6 +16,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -33,6 +34,7 @@ import com.music.vivi.R
 import com.music.vivi.ui.component.IconButton
 import com.music.vivi.ui.component.Material3SettingsGroup
 import com.music.vivi.ui.component.Material3SettingsItem
+import com.music.vivi.vivimusic.component.UpdateInfoDialog
 import com.music.vivi.ui.utils.backToMain
 import com.music.vivi.vivimusic.updater.getAutoUpdateCheckSetting
 import com.music.vivi.vivimusic.updater.saveAutoUpdateCheckSetting
@@ -46,6 +48,7 @@ import com.music.vivi.vivimusic.updater.getDownloadedApkCount
 import com.music.vivi.vivimusic.updater.clearDownloadedApks
 import com.music.vivi.vivimusic.updater.getBetaUpdatesSetting
 import com.music.vivi.vivimusic.updater.saveBetaUpdatesSetting
+import com.music.vivi.vivimusic.updater.autoClearOldApks
 import androidx.compose.material3.MaterialTheme
 import com.music.vivi.BuildConfig
 
@@ -71,6 +74,16 @@ fun UpdateSettings(
     var betaUpdatesEnabled by remember { mutableStateOf(getBetaUpdatesSetting(context)) }
     val isUpdateAvailable = getUpdateAvailableState(context) && autoUpdateEnabled
     var apkCount by remember { mutableStateOf(getDownloadedApkCount(context)) }
+    var showInfoDialog by remember { mutableStateOf(false) }
+
+    LaunchedEffect(Unit) {
+        autoClearOldApks(context)
+        apkCount = getDownloadedApkCount(context)
+    }
+
+    if (showInfoDialog) {
+        UpdateInfoDialog(onDismiss = { showInfoDialog = false })
+    }
 
     Column(
         Modifier
@@ -209,14 +222,30 @@ fun UpdateSettings(
                 Material3SettingsItem(
                     icon = painterResource(R.drawable.delete),
                     title = { Text(stringResource(R.string.clear_downloaded_updates)) },
-                    description = { 
-                        Text(
-                            text = if (apkCount == 0) {
-                                stringResource(R.string.clear_downloaded_updates_desc)
-                            } else {
-                                pluralStringResource(R.plurals.n_apk_found, apkCount, apkCount)
-                            }
-                        )
+                    description = {
+                        if (apkCount == 0) {
+                            Text(
+                                text = stringResource(R.string.clear_downloaded_updates_desc),
+                                color = MaterialTheme.colorScheme.onSurfaceVariant
+                            )
+                        } else {
+                            Text(
+                                text = pluralStringResource(R.plurals.n_apk_found, apkCount, apkCount),
+                                color = MaterialTheme.colorScheme.error
+                            )
+                        }
+                    },
+                    trailingContent = {
+                        IconButton(
+                            onClick = { showInfoDialog = true },
+                            onLongClick = {}
+                        ) {
+                            Icon(
+                                painterResource(R.drawable.info),
+                                contentDescription = null,
+                                modifier = Modifier.size(20.dp)
+                            )
+                        }
                     },
                     onClick = {
                         if (apkCount > 0) {
