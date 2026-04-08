@@ -466,6 +466,36 @@ est irréversible.
     <string name="error_title">Erreur</string>
     <string name="error_eq_apply_failed">Échec de l\'application du profil d\'égalisation : %1$s</string>
 
+	<!-- ViviEqualizer Strings -->
+    <string name="vivi_equalizer">Vivi Égaliseur</string>
+    <string name="vivi_equalizer_desc">Réglage acoustique de qualité professionnelle &amp; effets</string>
+    <string name="eq_simple">Simple</string>
+    <string name="eq_advanced">Avancé</string>
+    <string name="eq_label_bass">Bass</string>
+    <string name="eq_label_mid">Milieu</string>
+    <string name="eq_label_treble">Aigus</string>
+    <string name="eq_preset_flat">Plat</string>
+    <string name="eq_preset_bass_boost">Amplification des basses</string>
+    <string name="eq_preset_pure_clarity">Clarté absolue</string>
+    <string name="eq_preset_soft_bass">Basse douce</string>
+    <string name="eq_preset_electronic">Électronique</string>
+    <string name="eq_preset_rock">Rock</string>
+    <string name="eq_preset_pop">Pop</string>
+    <string name="eq_preset_jazz">Jazz</string>
+    <string name="eq_preset_voice">Voix</string>
+    <string name="eq_preset_dolby_open">Dolby Open</string>
+    <string name="eq_preset_dolby_rich">Dolby Rich</string>
+    <string name="eq_preset_dolby_focused">Spécial Dolby</string>
+    <string name="eq_preset_dirac_music">Dirac Music</string>
+    <string name="eq_preset_dirac_movie">Dirac Movie</string>
+    <string name="eq_preset_dirac_game">Dirac Game</string>
+    <string name="eq_enable_title">Vivi Égaliseur</string>
+    <string name="eq_enable_summary">Activer le traitement audio professionnel</string>
+    <string name="eq_label_vivi">Vivi Signature</string>
+    <string name="eq_label_dolby">Dolby Atmos</string>
+    <string name="eq_label_dirac">Dirac Audio</string>
+    <string name="eq_reset">Réinitialiser</string>
+
     <!-- Hardcoded strings -->
     <string name="found_in_settings_content">Dans les Paramètres &gt; Contenu</string>
     <string name="plays">lectures</string>
