@@ -495,6 +495,14 @@ est irréversible.
     <string name="eq_label_dolby">Dolby Atmos</string>
     <string name="eq_label_dirac">Dirac Audio</string>
     <string name="eq_reset">Réinitialiser</string>
+	<string name="eq_label_custom">Personnalisé</string>
+    <string name="eq_save">Sauvegarder</string>
+    <string name="eq_save_dialog_title">Enregistrer le préréglage</string>
+    <string name="eq_save_name_hint">Nom du préréglage</string>
+    <string name="eq_profile_saved">Préréglage enregistré</string>
+    <string name="eq_manage_presets">Gérer les préréglages</string>
+    <string name="eq_delete_selected">Supprimer</string>
+    <string name="eq_no_custom_presets">Aucun préréglage personnalisé trouvé</string>
 
     <!-- Hardcoded strings -->
     <string name="found_in_settings_content">Dans les Paramètres &gt; Contenu</string>
@@ -885,4 +893,11 @@ est irréversible.
     <string name="update_info_title">Informations sur la mise à jour</string>
     <string name="manual_delete_hint_title">Nettoyage manuel</string>
     <string name="manual_delete_hint_desc">Vous pouvez également les supprimer manuellement. Supprimer les anciens fichiers APK permettra au programme de mise à jour de fonctionner correctement.</string>
+
+	<!-- Playback Log -->
+    <string name="logs_heading">Journaux</string>
+    <string name="playback_logs">Journaux de lecture</string>
+    <string name="playback_logs_desc">Afficher la résolution des flux en temps réel et les événements liés à la lutte contre les bots</string>
+    <string name="playback_logs_title">Journaux de lecture</string>
+    <string name="no_playback_logs">Aucun événement de lecture n\'a encore été enregistré</string>
 </resources>
